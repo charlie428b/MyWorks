@@ -13,18 +13,3 @@ title: 我的Blog
 		</li>
 　　{% endfor %}
 </ul>
-<ul>
-　　{% for category1 in site.categories %} 
-　　　　<li>
-			{{ category1 }}
-			<ul>
-				{% for post2 in category %}
-				<li>
-				{{ post2.date | date_to_string }} 
-				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</li>
-　　{% endfor %}
-</ul>
