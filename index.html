@@ -14,13 +14,13 @@ title: 我的Blog
 　　{% endfor %}
 </ul>
 <ul>
-　　{% for category in site.categories %} 
+　　{% for category1 in site.categories %} 
 　　　　<li>
-			{{ category }}
+			{{ category1 }}
 			<ul>
-				{% for post in category %}
+				{% for post2 in category %}
 				<li>
-				{{ post.date | date_to_string }} 
+				{{ post2.date | date_to_string }} 
 				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 				</li>
 				{% endfor %}
