@@ -9,7 +9,7 @@ title: 我的Blog
 　　　　<li>
 			{{ post.date | date_to_string }} 
 			<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-			{{ post.categories | array_to_string }}
+			{{ post.categories | array_to_sentence_string }}
 		</li>
 　　{% endfor %}
 </ul>
