@@ -3,7 +3,7 @@ body
 	
 }
 
-#filterBtn
+li
 {
-	
+	list-style-type: none;
 }
