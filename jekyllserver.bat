@@ -9,9 +9,9 @@ REM echo 127.0.0.1 liuchibing.ticp.net>>%WINDIR%\System32\drivers\etc\hosts
 :start
 echo 正在启动jekyll服务...
 bash --login -c "bundle exec jekyll serve --safe --force_polling"
-choice /t 1 /d y /m "是否重启jekyll"
-if ERRORLEVEL 2 goto :end
-if ERRORLEVEL 1 goto :start
+REM choice /t 1 /d y /m "是否重启jekyll"
+REM if ERRORLEVEL 2 goto :end
+REM if ERRORLEVEL 1 goto :start
 :end
 REM echo 正在还原HOSTS...
 REM move %WINDIR%\System32\drivers\etc\hosts_BACKUP %WINDIR%\System32\drivers\etc\hosts
