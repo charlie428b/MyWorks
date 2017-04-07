@@ -13,18 +13,20 @@ title: 2017年高一年级作曲新作品音乐会
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<!-- JQuery -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<style>
-	  
+	  body {
+	    position: relative
+	  }
 	</style>
 	<title>{{ page.title }}</title>
 	
 </head>
 
-<body data-spy="scroll" data-target="nav1">
+<body data-spy="scroll" data-target="#nav1" data-offset="200">
 	<div class="container">
 		<div class="jumbotron" style="background-image: url('http://www.runoob.com/wp-content/uploads/2014/07/affix_plugin_demo.jpg')">
 			<h1>{{ page.title }}</h1>
@@ -78,20 +80,20 @@ title: 2017年高一年级作曲新作品音乐会
 				<p>介绍</p>
 				<hr />
 		    </div>
-			</div>
-			<div class="col-xs-1">
-			  <ul class="nav nav-pills nav-stacked" id="nav1">
-			    <li><a href="#section-1">1</a></li>
-			    <li><a href="#section-2">2</a></li>
-			    <li><a href="#section-3">3</a></li>
-			    <li><a href="#section-4">4</a></li>
-			    <li><a href="#section-5">5</a></li>
-			    <li><a href="#section-6">6</a></li>
-			    <li><a href="#section-7">7</a></li>
-			    <li><a href="#section-8">8</a></li>
-			    <li><a href="#section-9">9</a></li>
+		  </div>
+		  <div class="col-xs-1" id="nav1" data-spy="affix" data-offset-top="200" data-offset-left="200">
+			  <ul class="nav nav-pills nav-stacked">
+			    <li role="presentation"><a href="#section-1">1</a></li>
+			    <li role="presentation"><a href="#section-2">2</a></li>
+			    <li role="presentation"><a href="#section-3">3</a></li>
+			    <li role="presentation"><a href="#section-4">4</a></li>
+			    <li role="presentation"><a href="#section-5">5</a></li>
+			    <li role="presentation"><a href="#section-6">6</a></li>
+			    <li role="presentation"><a href="#section-7">7</a></li>
+			    <li role="presentation"><a href="#section-8">8</a></li>
+			    <li role="presentation"><a href="#section-9">9</a></li>
 			  </ul>
-			</div>
+		  </div>
 		</div>
 	</div>
 </body>
