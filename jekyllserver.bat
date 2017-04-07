@@ -15,4 +15,4 @@ REM if ERRORLEVEL 1 goto :start
 :end
 REM echo 正在还原HOSTS...
 REM move %WINDIR%\System32\drivers\etc\hosts_BACKUP %WINDIR%\System32\drivers\etc\hosts
-pause
+REM pause
