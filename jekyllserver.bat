@@ -1,5 +1,5 @@
 @echo off
-echo 刘持冰作品目录网站 jekyll开发调试服务快捷配置批处理 by 刘持冰
+echo jekyll开发调试服务快捷配置批处理 by 刘持冰
 REM echo 请确保使用管理员身份运行
 REM cd /d %~dp0
 REM echo 正在备份HOSTS...
