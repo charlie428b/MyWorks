@@ -1,0 +1,52 @@
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/frameworks/bootstrap/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/frameworks/bootstrap/css/bootstrap-theme.min.css">
+
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/frameworks/md/css/bootstrap-material-design.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/frameworks/md/css/ripples.min.css">
+
+    <!-- JQuery -->
+    <script src="{{ site.baseurl }}/frameworks/jquery/jquery.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="{{ site.baseurl }}/frameworks/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="{{ site.baseurl }}/frameworks/md/js/material.min.js"></script>
+    <script src="{{ site.baseurl }}/frameworks/md/js/ripples.min.js"></script>
+
+    <style>
+        body {
+            position: relative;
+        }
+    </style>
+
+    <!--百度站长工具自动推送代码-->
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+    <meta name="keywords" content="刘持冰,作曲,作品,中央音乐学院附中,{{ page.title }},{{ page.categories }}">
+
+    <title>{{ page.title }}{% if page.title %} - {% endif %}{{ site.name }}</title>
+
+</head>
