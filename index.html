@@ -14,8 +14,11 @@ home: true
 	}
 </style>
 
-<ul class="media">
-　　{% for post in site.posts %} 
+<ul class="media" style="margin-top: 15px;">
+	<li class="media-body">
+		<h1 style="display: inline; margin-right: 15px">原创作品</h1><a href="/music/original">更多</a>
+	</li>
+　　{% for post in site.categories.original %} 
 　　<li class="media-body">
 		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 		<p>{{ post.date | date_to_string }}</p>
