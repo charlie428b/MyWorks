@@ -16,7 +16,7 @@ original: true
 </style>
 
 <ul class="media">
-　　{% for post in site.categories.original %} 
+　　{% for post in site.posts %} 
 　　<li class="media-body">
 		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 		<p>{{ post.date | date_to_string }}</p>
