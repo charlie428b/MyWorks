@@ -1,17 +1,25 @@
 ---
 layout: default
-title: 首页
+home: true
 ---
 
 <style type="text/css">
-h2{
-margin-top: 0;
-}
+	h2 {
+		margin-top: 0;
+	}
+
+	ul.media {
+		padding-left: 15px;
+		margin-top: 0;
+	}
 </style>
 
-<ul style="list-style-type: none; margin-top: 0;">
-　　{% for post in site.posts %} 
-　　<li>
+<ul class="media" style="margin-top: 15px;">
+	<li class="media-body">
+		<h1 style="display: inline; margin-right: 15px">原创作品</h1><a href="/music/original">更多</a>
+	</li>
+　　{% for post in site.categories.original %} 
+　　<li class="media-body">
 		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 		<p>{{ post.date | date_to_string }}</p>
 		<p>{{ post.summary }}</p>

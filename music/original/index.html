@@ -1,0 +1,28 @@
+---
+layout: default
+title: 原创音乐作品
+original: true
+---
+
+<style type="text/css">
+	h2 {
+		margin-top: 0;
+	}
+
+	ul.media {
+		padding-left: 15px;
+		margin-top: 0;
+	}
+</style>
+
+<ul class="media">
+　　{% for post in site.posts %} 
+　　<li class="media-body">
+		<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+		<p>{{ post.date | date_to_string }}</p>
+		<p>{{ post.summary }}</p>
+		<p>分类：{{ post.categories | array_to_sentence_string }}</p>
+		<hr />
+	</li>
+　　{% endfor %}
+</ul>

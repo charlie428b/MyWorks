@@ -1,77 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/print.css" media="print">
+{% include head.html %}
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-	
-	<!--百度站长工具自动推送代码-->
-	<script>
-	(function(){
-		var bp = document.createElement('script');
-		var curProtocol = window.location.protocol.split(':')[0];
-		if (curProtocol === 'https') {
-			bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-		}
-		else {
-			bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-		}
-		var s = document.getElementsByTagName("script")[0];
-		s.parentNode.insertBefore(bp, s);
-	})();
-	</script>
-
-	<meta name="keywords" content="刘持冰,作曲,作品目录,中央音乐学院附中,{{ page.title }},{{ page.categories }}">
-	
-	<title>{{ page.title }} - 刘持冰作品目录</title>	
-</head>
 <body>
 
-	<header>
-      <div class="inner">
-	  <a href="{{ site.baseurl }}/">
-        <h1>刘持冰</h1>
-        <h2>作品目录</h2>
-	  </a>
-	  <!-- 搜索框 -->
-	  <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=16624232926328529584' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
-	  </div>
-    </header>
+	{% include header.html %}
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-		
-			{{ content }}
-			
-        </section>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-9">
+				<div class="panel panel-default" style="padding: 15px;">
+					{{ content }}
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-3">
+				<div class="panel panel-default" style="padding: 15px;">
+					<h3>关于我</h3>
+					<p style="text-align: center"><img src="{{ site.baseurl }}/images/me_small.JPG" height="100px" width="150px" alt="我的照片" /></p>
+					<p style="text-align: center">刘持冰
+						<br />中央音乐学院附中作曲专业学生
+						<br /><a href="{{ site.baseurl }}/about.html">查看详细</a></p>
+					<p style="text-align: center">访问我的：<br />
+						<a href="http://weibo.com/1721844490/profile"><img src="{{ site.baseurl }}/images/WB_logo.png" /></a>
+						<br />
+						<a href="http://i.youku.com/i/UMTc0MzQ1MDEy"><img src="{{ site.baseurl }}/images/yk-logo-0412.png" /></a>
+					</p>
 
-        <aside id="sidebar">
-		
-			<h2>关于我</h2>
-			<p style="text-align: center"><img src="{{ site.baseurl }}/images/me_small.JPG" height="100px" width="150px" alt="我的照片"/></p>
-			<p style="text-align: center">刘持冰
-			<br />中央音乐学院附中作曲专业学生
-			<br /><a href="{{ site.baseurl }}/about.html">查看详细</a></p>
-			<p style="text-align: center">访问我的：<br />
-			<a href="http://weibo.com/1721844490/profile"><img src="{{ site.baseurl }}/images/WB_logo.png" /></a>
-			<br />
-			<a href="http://i.youku.com/i/UMTc0MzQ1MDEy"><img src="{{ site.baseurl }}/images/yk-logo-0412.png" /></a>
-			</p>
-			
-			<p>Hosted by <a href="https://pages.github.com" style="font-weight: bold">GitHub Pages</a></p>
-        
-		</aside>
-      </div>
-    </div>
-	
+					<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
+
 </html>
