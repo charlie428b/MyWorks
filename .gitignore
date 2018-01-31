@@ -4,3 +4,4 @@ _site/
 .vs/
 .vscode/
 Gemfile.lock
+node_modules/
