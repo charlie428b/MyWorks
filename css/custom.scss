@@ -1,0 +1,21 @@
+---
+---
+
+body {
+    padding-top: 3.5rem;
+}
+
+.large-brand {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    img {
+        height: 10rem;
+        margin: 0 15px 0 15px;
+    }
+}
