@@ -10,21 +10,21 @@
 	{% include header.html %}
 
 	<div class="jumbotron jumbotron-fluid bg-dark">
-		<div class="container clearfix">
-			<a href="{{ site.baseurl }}/" class="large-brand align-middle">
-				<img src="{{ site.baseurl }}/icon.png" class="float-left d-block" />
-				<h1 class="display-4">{{ site.name }}</h1>
-			</a>
+		<div class="container">
+			<div class="row">
+				<a href="{{ site.baseurl }}/" class="large-brand">
+					<img src="{{ site.baseurl }}/icon.png" class="align-middle" />
+					<div class="d-inline-flex flex-column align-middle">
+						<h1 class="display-4">{{ site.name }}</h1>
+						<p class="lead text-muted">Liu Chibing</p>
+					</div>
+				</a>
+				<div class="d-none d-sm-block ml-auto">
+					<img src="{{ site.baseurl }}/images/me_small_square.JPG" class="rounded-circle round-selfie" alt="刘持冰" />
+				</div>
+			</div>
 		</div>
 	</div>
-
-	<div class="page-header container" style="margin-top: 15px; margin-bottom: 0; vertical-align: center;">
-		<a href="/" style="color: #333;">
-			<img src="/icon.png" align="left" style="height: 80px; margin: 0 15px 0 15px;" />
-			<h1>{{ site.name }}</h1>
-		</a>
-	</div>
-
 
 	<div class="container">
 		<div class="row">
