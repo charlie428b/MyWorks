@@ -5,7 +5,7 @@ body {
     padding-top: 3.5rem;
 }
 
-.large-brand {
+.remove-a-style {
     color: #fff;
     text-decoration: none;
 
@@ -13,6 +13,10 @@ body {
         color: #fff;
         text-decoration: none;
     }
+}
+
+.large-brand {
+    @extend .remove-a-style;
 
     img {
         height: 8rem;
@@ -22,4 +26,8 @@ body {
 
 .round-selfie {
     height: 5rem;
+}
+
+.social-icon {
+    margin-right: 0.25rem;
 }

@@ -11,16 +11,33 @@
 
 	<div class="jumbotron jumbotron-fluid bg-dark">
 		<div class="container">
-			<div class="row">
+			<div class="row align-items-center">
 				<a href="{{ site.baseurl }}/" class="large-brand">
 					<img src="{{ site.baseurl }}/icon.png" class="align-middle" />
 					<div class="d-inline-flex flex-column align-middle">
 						<h1 class="display-4">{{ site.name }}</h1>
-						<p class="lead text-muted">Liu Chibing</p>
+						<span class="lead text-muted">Liu Chibing</span>
 					</div>
 				</a>
-				<div class="d-none d-sm-block ml-auto">
-					<img src="{{ site.baseurl }}/images/me_small_square.JPG" class="rounded-circle round-selfie" alt="刘持冰" />
+				<div class="ml-auto">
+					<a href="{{ site.baseurl }}/about" class="align-middle">
+						<img src="{{ site.baseurl }}/images/me_small_square.JPG" class="rounded-circle round-selfie" alt="刘持冰" />
+					</a>
+					<div class="text-light d-none d-md-inline-flex flex-column align-middle">
+						<span>
+							<a href="{{ site.baseurl }}/about" class="remove-a-style">中央音乐学院附中作曲专业学生</a>
+						</span>
+						<span>
+							<a href="{{ site.baseurl }}/about" style="margin-right: 0.5rem;">查看详细</a>
+							访问：
+							<a href="http://weibo.com/1721844490/profile">
+								<img src="{{ site.baseurl }}/images/weibo.ico" alt="微博" class="social-icon" />
+							</a>
+							<a href="http://i.youku.com/i/UMTc0MzQ1MDEy">
+								<img src="{{ site.baseurl }}/images/youku.ico" alt="优酷" class="social-icon" />
+							</a>
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
