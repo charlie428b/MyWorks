@@ -11,7 +11,7 @@
 
 	<div class="jumbotron jumbotron-fluid bg-dark">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row flex-column flex-lg-row align-items-lg-center">
 				<a href="{{ site.baseurl }}/" class="large-brand">
 					<img src="{{ site.baseurl }}/icon.png" class="align-middle" />
 					<div class="d-inline-flex flex-column align-middle">
@@ -19,21 +19,21 @@
 						<span class="lead text-muted">Liu Chibing</span>
 					</div>
 				</a>
-				<div class="ml-auto">
+				<div class="pt-3 pl-3 pt-lg-0 pl-lg-0 ml-lg-auto">
 					<a href="{{ site.baseurl }}/about" class="align-middle">
 						<img src="{{ site.baseurl }}/images/me_small_square.JPG" class="rounded-circle round-selfie" alt="刘持冰" />
 					</a>
-					<div class="text-light d-none d-md-inline-flex flex-column align-middle">
+					<div class="text-light d-inline-flex flex-column align-middle">
 						<span>
 							<a href="{{ site.baseurl }}/about" class="remove-a-style">中央音乐学院附中作曲专业学生</a>
 						</span>
 						<span>
 							<a href="{{ site.baseurl }}/about" style="margin-right: 0.5rem;">查看详细</a>
 							访问：
-							<a href="http://weibo.com/1721844490/profile">
+							<a href="http://weibo.com/1721844490/profile" data-toggle="tooltip" data-placement="bottom" title="微博">
 								<img src="{{ site.baseurl }}/images/weibo.ico" alt="微博" class="social-icon" />
 							</a>
-							<a href="http://i.youku.com/i/UMTc0MzQ1MDEy">
+							<a href="http://i.youku.com/i/UMTc0MzQ1MDEy" data-toggle="tooltip" data-placement="bottom" title="优酷">
 								<img src="{{ site.baseurl }}/images/youku.ico" alt="优酷" class="social-icon" />
 							</a>
 						</span>
@@ -45,40 +45,17 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-9">
-				<div class="panel panel-default" style="padding: 15px;">
+			<div class="col">
 					{{ content }}
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-3">
-				<div class="panel panel-default" style="padding: 15px;">
-					<h3>关于我</h3>
-					<p style="text-align: center">
-						<img src="{{ site.baseurl }}/images/me_small.JPG" height="100px" width="150px" alt="我的照片" />
-					</p>
-					<p style="text-align: center">刘持冰
-						<br />中央音乐学院附中作曲专业学生
-						<br />
-						<a href="{{ site.baseurl }}/about.html">查看详细</a>
-					</p>
-					<p style="text-align: center">访问我的：
-						<br />
-						<a href="http://weibo.com/1721844490/profile">
-							<img src="{{ site.baseurl }}/images/WB_logo.png" />
-						</a>
-						<br />
-						<a href="http://i.youku.com/i/UMTc0MzQ1MDEy">
-							<img src="{{ site.baseurl }}/images/yk-logo-0412.png" />
-						</a>
-					</p>
-
-					<p>Hosted by
-						<a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
-					</p>
-				</div>
 			</div>
 		</div>
 	</div>
+	<footer class="container-fluid bg-light border-top pt-1">
+	      <span class="d-block d-md-inline">Hosted by
+		<a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>.
+	      </span>
+	      <span class="d-block d-md-inline">Copyright &copy; {{ site.time | date: "%Y" }} Liu Chibing. All rights reserved.</span>
+	</footer>
 
 	{% include scripts.html %}
 

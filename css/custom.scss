@@ -1,6 +1,10 @@
 ---
 ---
 
+@import "bootstrap-4.0.0/scss/functions";
+@import "bootstrap-4.0.0/scss/variables";
+@import "bootstrap-4.0.0/scss/mixins";
+
 body {
     padding-top: 3.5rem;
 }
@@ -25,9 +29,17 @@ body {
 }
 
 .round-selfie {
-    height: 5rem;
+    height: 3rem;
+}
+@include media-breakpoint-up(lg) {
+    .round-selfie {
+	height: 5rem;
+    }
 }
 
 .social-icon {
+    height: 1rem;
     margin-right: 0.25rem;
 }
+
+

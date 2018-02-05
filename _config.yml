@@ -8,4 +8,5 @@ sitemap:
   - "/baidu_verify_ioVoW70JI2.html"
   - "/baidu_verify_vtDQmo9nr1.html"
 sass:
+ sass_dir: _stylesources
  style: compressed
