@@ -1,0 +1,11 @@
+<div class="media">
+	<div class="media-body">
+		<h2>
+			<a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a>
+		</h2>
+		<p>{{ include.post.date | date_to_string }}</p>
+		<p>{{ include.post.summary }}</p>
+		<p>分类：{{ include.post.categories | array_to_sentence_string }}</p>
+		<hr />
+	</div>
+</div>
