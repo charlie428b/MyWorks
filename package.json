@@ -1,0 +1,36 @@
+{
+  "name": "liuchibing.ml",
+  "version": "1.0.0",
+  "description": "my website.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && npm run serve",
+    "build": "npm-run-all --parallel css js",
+    "css": "npm run css-compile && npm run css-prefix",
+    "css-compile": "node-sass --output-style compressed --include-path _stylesources -o css _sass",
+    "css-prefix": "postcss -u autoprefixer -r css/custom.css",
+    "js": "uglifyjs _js/*.js -c -m -o js/custom.js",
+    "serve": "npm-run-all --parallel watch jekyll-serve",
+    "jekyll-serve": "bundle exec jekyll build --safe --incremental"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuchibing/liuchibing.ml.git"
+  },
+  "author": "liuchibing",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/liuchibing/liuchibing.ml/issues"
+  },
+  "homepage": "https://github.com/liuchibing/liuchibing.ml",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0",
+    "rimraf": "^2.6.2",
+    "uglify-js": "^3.3.10"
+  }
+}

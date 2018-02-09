@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+
+	{% include header.html %}
+
+	{% include jumbotron.html %}
+
+	<div class="container">
+		<div class="row">
+			<main class="col">
+				{{ content }}
+			</main>
+		</div>
+	</div>
+
+	{% include footer.html %}
+
+	{% include scripts.html %}
+
+</body>
+
+</html>

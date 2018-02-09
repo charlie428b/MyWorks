@@ -1,6 +1,3 @@
----
----
-
 @import "bootstrap-4.0.0/scss/functions";
 @import "bootstrap-4.0.0/scss/variables";
 @import "bootstrap-4.0.0/scss/mixins";
@@ -44,34 +41,15 @@ body {
 
 //======================Animations=======================================
 
-@keyframes right-sps {
-    0% {
-        margin-left: 2rem;
-    }
-    100% {
-        margin-left: 0rem;
-    }
-}
-
 .sps--abv {
-    -webkit-animation: fadeOutDown;
     animation: fadeOutDown;
-    -webkit-animation-duration: 0.25s;
     animation-duration: 0.25s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
 .sps--blw {
-    -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    -webkit-animation-duration: 0.25s;
     animation-duration: 0.25s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     display: inline-block;
-}
-
-#navbarNav {
-    transition: all 0.5s ease;
 }
