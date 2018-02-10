@@ -1,1 +1,38 @@
-$(function(){$('[data-toggle="tooltip"]').tooltip();var n=function(n){var t={animation:"animationend",OAnimation:"oAnimationEnd",MozAnimation:"mozAnimationEnd",WebkitAnimation:"webkitAnimationEnd"};for(var o in t)if(void 0!==n.style[o])return t[o]}(document.getElementsByClassName("navbar-brand")[0]),t=document.getElementsByClassName("navbar")[0].getClientRects()[0].height,o=document.getElementById("large-brand").getBoundingClientRect();ScrollPosStyler.init({scrollOffsetY:(o.top+o.bottom)/2-t,onAboveCallback:function(t){$(t).one(n,function(){$(t).addClass("d-none")})},onBelowCallback:function(t){$(t).off(n),$(t).removeClass("d-none")}})});
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+
+    var animationEnd = (function (el) {
+        var animations = {
+            animation: 'animationend',
+            OAnimation: 'oAnimationEnd',
+            MozAnimation: 'mozAnimationEnd',
+            WebkitAnimation: 'webkitAnimationEnd',
+        };
+
+        for (var t in animations) {
+            if (el.style[t] !== undefined) {
+                return animations[t];
+            }
+        }
+    })(document.getElementsByClassName('navbar-brand')[0]);
+
+    var handleAboveCallback = function (element) {
+        $(element).one(animationEnd, function () {
+            $(element).addClass("d-none");
+        });
+    };
+
+    var handleBelowCallback = function (element) {
+        $(element).off(animationEnd);
+        $(element).removeClass("d-none");
+    };
+
+    var navbarHeight = document.getElementsByClassName("navbar")[0].getClientRects()[0].height;
+    var boundingClientRect = document.getElementById("large-brand").getBoundingClientRect();
+
+    ScrollPosStyler.init({
+        scrollOffsetY: (boundingClientRect.top + boundingClientRect.bottom) / 2 - navbarHeight,
+        onAboveCallback: handleAboveCallback,
+        onBelowCallback: handleBelowCallback
+    });
+})
