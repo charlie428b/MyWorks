@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: post
 title: 弦乐四重奏
 summary: 
 original: true
 ---
 
-<h1>弦乐四重奏</h1>
+弦乐四重奏
+
+Hello World!
