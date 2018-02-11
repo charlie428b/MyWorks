@@ -15,7 +15,7 @@
     "watch-css": "onchange _sass/*.scss -- npm run css",
     "watch-js": "onchange js/custom.js -- npm run js",
     "serve": "npm-run-all --parallel watch jekyll-serve",
-    "jekyll-serve": "bundle exec jekyll serve --safe --incremental"
+    "jekyll-serve": "bundle exec jekyll serve --safe"
   },
   "repository": {
     "type": "git",
