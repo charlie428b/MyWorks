@@ -9,18 +9,31 @@
 
 	{% include header.html %}
 
-	{% include jumbotron.html ispost=true %}
+	<div class="jumbotron jumbotron-fluid fixed-top bg-dark" style="z-index: -1; height: 50%"></div>
 
-	<div class="container">
-		<div class="row">
-			<main class="col">
-				{{ content }}
-			</main>
+	<div class="container mt-4">
+		<div class="row flex-column flex-lg-row align-items-lg-center">
+			{% include large-brand.html ispost=true %}
+			{% include short-bio.html ispost=true %}
+		</div>
+	</div>
+
+	<div class="container mt-4 mb-4">
+		<div class="card">
+			<div class="row card-body">
+				<main class="col">
+					{{ content }}
+				</main>
+			</div>
+			<div class="d-flex card-footer">
+				<a class="mr-auto" href="{{ site.baseurl }}{{ page.previous.url }}">上一篇</a>
+				<a class="ml-auto" href="{{ site.baseurl }}{{ page.next.url }}">下一篇</a>
+			</div>
 		</div>
 	</div>
 
 	{% include footer.html %}
-
+	
 	{% include scripts.html %}
 
 </body>

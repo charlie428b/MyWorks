@@ -9,7 +9,14 @@
 
 	{% include header.html %}
 
-	{% include jumbotron.html %}
+	<div class="jumbotron jumbotron-fluid bg-dark">
+		<div class="container">
+			<div class="row flex-column flex-lg-row align-items-lg-center">
+				{% include large-brand.html %}
+				{% include short-bio.html %}
+			</div>
+		</div>
+	</div>
 
 	<div class="container">
 		<div class="row">
