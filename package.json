@@ -5,16 +5,16 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && npm run serve",
-    "build": "npm-run-all --parallel css js",
-    "css": "npm run css-compile && npm run css-prefix",
+    "start": "run-s build serve",
+    "build": "run-p css js",
+    "css": "run-s css-compile css-prefix",
     "css-compile": "node-sass --output-style compressed --include-path _stylesources -o css _sass",
     "css-prefix": "postcss -u autoprefixer -r css/custom.css",
     "js": "uglifyjs js/custom.js -c -m -o js/custom.min.js",
-    "watch": "npm-run-all --parallel watch-css watch-js",
+    "watch": "run-p watch-css watch-js",
     "watch-css": "onchange _sass/*.scss -- npm run css",
     "watch-js": "onchange js/custom.js -- npm run js",
-    "serve": "npm-run-all --parallel watch jekyll-serve",
+    "serve": "run-p watch jekyll-serve",
     "jekyll-serve": "bundle exec jekyll serve --safe"
   },
   "repository": {
