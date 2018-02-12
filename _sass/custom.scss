@@ -2,6 +2,7 @@
 @import "bootstrap-4.0.0/scss/variables";
 @import "bootstrap-4.0.0/scss/mixins";
 
+//for fixed navbar
 body {
     padding-top: 3.5rem;
 }
@@ -46,6 +47,27 @@ body {
     height: 1rem;
     margin-right: 0.25rem;
 }
+
+.post-bg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 15.5+5rem;
+}
+@include media-breakpoint-up(lg) {
+    .post-bg {
+        height: 11.5+5rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .embed-responsive {
+        width: 75%;
+    }
+}
+
 
 //======================Animations=======================================
 
