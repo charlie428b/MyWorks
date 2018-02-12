@@ -2,7 +2,8 @@
 <html>
 
 <head>
-	{% include head.html %}
+  {% include head.html %}
+  <script defer src="{{ site.baseurl }}/font-awesome/js/fontawesome-all.js"></script>
 </head>
 
 <body>
@@ -25,9 +26,9 @@
 					{{ content }}
 				</main>
 			</div>
-			<div class="d-flex card-footer">
-				<a class="mr-auto" href="{{ site.baseurl }}{{ page.previous.url }}">上一篇</a>
-				<a class="ml-auto" href="{{ site.baseurl }}{{ page.next.url }}">下一篇</a>
+			<div class="d-flex flex-column card-footer">
+				<a class="mr-auto" href="{{ site.baseurl }}{{ page.previous.url }}"><i class="fas fa-arrow-left mr-1"></i>上一篇 <span class="text-muted">{{ page.previous.title }}</span></a>
+				<a class="ml-auto" href="{{ site.baseurl }}{{ page.next.url }}"><span class="text-muted">{{ page.next.title }}</span> 下一篇<i class="fas fa-arrow-right ml-1"></i></a>
 			</div>
 		</div>
 	</div>
