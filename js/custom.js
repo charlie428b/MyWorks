@@ -18,13 +18,13 @@ $(function () {
 
     var handleAboveCallback = function (element) {
         $(element).one(animationEnd, function () {
-            $(element).addClass("d-none");
+            element.classList.add("d-none");
         });
     };
 
     var handleBelowCallback = function (element) {
         $(element).off(animationEnd);
-        $(element).removeClass("d-none");
+        element.classList.remove("d-none");
     };
 
     var navbarHeight = document.getElementsByClassName("navbar")[0].getClientRects()[0].height;
