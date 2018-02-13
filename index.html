@@ -3,14 +3,12 @@ layout: default
 home: true
 ---
 
-<div class="media">
+<div class="media mb-2">
 	<div class="media-body">
-		<h1 class="d-inline mr-1">原创作品</h1>
+		<h1 class="d-inline mr-1">原创音乐作品</h1>
 		<a href="/music/original">更多</a>
 	</div>
 </div>
 {% for post in site.categories.original %}
-
 	{% include posts-list-item.html post=post %}
-
 {% endfor %}

@@ -1,9 +1,10 @@
 url: "http://www.liuchibing.ml"
 baseurl: ""
 name: 刘持冰
-plugins:
-  - jekyll-sitemap
+brief-about: 中央音乐学院附中作曲专业学生
 sitemap:
   exclude:
     - /baidu_verify_ioVoW70JI2.html
     - /baidu_verify_vtDQmo9nr1.html
+plugins:
+  - jekyll-sitemap

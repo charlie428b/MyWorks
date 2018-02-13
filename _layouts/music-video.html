@@ -28,8 +28,11 @@
 					{% else %}
 					<h1>{{ page.title }}</h1>
 					{% endif %}
-					<p class="text-muted mt-3 mb-0">时间：{{ page.date | date: "%Y-%m-%d %H:%M"}}</p>
+					<p class="text-muted mt-3 mb-0">创作时间：{{ page.date | date: "%Y"}}年</p>
 					<hr class="mt-1" />
+					{% if page.video-src %}
+					{% include embed-video.html src=page.video-src %}
+					{% endif %}
 					{{ content }}
 				</main>
 			</div>
