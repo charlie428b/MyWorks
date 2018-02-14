@@ -1,19 +1,10 @@
 ---
-layout: default
+layout: about
 title: 关于我
 about: true
 ---
 
-<h2>关于我</h2>
-<p style="text-align: center">
-    <img src="{{ site.baseurl }}/images/me_small.JPG" height="100px" width="150px" alt="我的照片" />
-    <br />刘持冰
-</p>
-<br />
-访问我的：<br />
-<a href="http://weibo.com/1721844490/profile"><img src="{{ site.baseurl }}/images/WB_logo.png" /></a>
-<br />
-<a href="http://i.youku.com/i/UMTc0MzQ1MDEy"><img src="{{ site.baseurl }}/images/yk-logo-0412.png" /></a>
+## 关于我
 
 <p>
     刘持冰，男，2000年出生于中国北京

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+
+	{% include header.html %}
+
+	<div class="jumbotron jumbotron-fluid bg-dark">
+		<div class="container">
+			<div class="row flex-column flex-lg-row align-items-lg-center">
+				{% include large-brand.html %}
+				{% include short-bio.html %}
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+	  <div class="row">
+	    <div class="col-12 col-md-4">
+	      <img class="mb-3" src="{{ site.baseurl }}/images/me_small.JPG" height="100px" width="150px" alt="刘持冰" />
+	    </div>
+		  <main class="col-12 col-md-8">
+				{{ content }}
+			</main>
+		</div>
+	</div>
+
+	{% include footer.html %}
+
+	{% include scripts.html %}
+
+</body>
+
+</html>
