@@ -62,9 +62,16 @@ body {
     }
 }
 
+.about-selfie {
+    width: 50%;
+}
 @include media-breakpoint-up(lg) {
     .embed-responsive {
         width: 75%;
+    }
+    
+    .about-selfie {
+	width: 100%;
     }
 }
 
