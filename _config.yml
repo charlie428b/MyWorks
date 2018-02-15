@@ -2,6 +2,7 @@ url: "http://www.liuchibing.ml"
 baseurl: ""
 name: 刘持冰
 brief-about: 中央音乐学院附中作曲专业学生
+exclude: ["package.json", "package-lock.json", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 sitemap:
   exclude:
     - /baidu_verify_ioVoW70JI2.html
