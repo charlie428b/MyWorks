@@ -1,0 +1,156 @@
+.number {
+    background-color: orange;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-top: 0.04rem;
+    text-align: center;
+}
+
+hr {
+    flex-grow: 1;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+body {
+    position: relative;
+}
+
+.jumbotron {
+    writing-mode: vertical-rl;
+    width: 100%;
+}
+
+.nav-item .nav-link {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+}
+
+#nav:before,
+#nav:after {
+    content: '';
+    display: table;
+}
+
+.sps--abv {
+    opacity: 0;
+}
+
+.sps--blw .number {
+    animation-duration: 0.75s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+    animation-name: bounceIn;
+}
+
+.sps--blw hr {
+    animation-duration: 0.75s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+    animation-name: fadeInLeft;
+}
+
+.sps--blw h3,
+.sps--blw h4,
+.sps--blw p {
+    animation-duration: 0.75s;
+    animation-fill-mode: backwards;
+    animation-name: fadeInDown;
+}
+
+.sps--blw h3 {
+    animation-delay: 0.4s;
+}
+
+.sps--blw h4 {
+    animation-delay: 0.45s;
+}
+
+.sps--blw p {
+    animation-delay: 0.5s;
+}
+
+/* ============== animations =============== */
+
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+
+    }
+
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+
+    }
+
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+
+    }
+
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+    }
+
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+
+    }
+
+}
