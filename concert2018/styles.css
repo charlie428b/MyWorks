@@ -17,8 +17,13 @@ body {
 }
 
 .jumbotron {
-    writing-mode: vertical-rl;
     width: 100%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+.jumbotron .container .vertical-rl {
+    writing-mode: vertical-rl;
 }
 
 .nav-item .nav-link {
