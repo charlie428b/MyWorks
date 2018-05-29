@@ -12,8 +12,13 @@ hr {
     margin-bottom: 0.75rem;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     position: relative;
+    height: 100%;
 }
 
 .jumbotron {
@@ -23,11 +28,16 @@ body {
     background-size: cover;
 }
 
+.jumbotron .container {
+    height: 100%;
+}
+
 .jumbotron .container .vertical-rl {
     writing-mode: vertical-rl;
 }
 
 .jumbotron .container .information {
+    width: 100%;
     text-align: center;
 }
 
